@@ -12,15 +12,23 @@ Laravel is accessible, yet powerful, providing powerful tools needed for large, 
 
 Les comparto un ejemplo en el cual realizo un ejemplo simple para realizar listas dependientes en Laravel 4 utilizando ajax,los documentos que genere son los siguientes:
 
---app/views 				(index.blade.php)
---app/database/migrations 	(db_lista_paises.php)
---app/database/migrations 	(db_lista_estados.php)
---app/database/seeds 		(ListaPaisesSeeder.php)
---app/database/seeds 		(ListaEstadosSeeder.php)
---app/database/seeds 		(ListaPaisesSeeder.php)
---app/models/ 				(ListaPaises.php)
---app/models/ 				(ListaEstados.php)
---app/						(routes.php)
+#--app/views 				(index.blade.php)
+
+#--app/database/migrations 	(db_lista_paises.php)
+
+#--app/database/migrations 	(db_lista_estados.php)
+
+#--app/database/seeds 		(ListaPaisesSeeder.php)
+
+#--app/database/seeds 		(ListaEstadosSeeder.php)
+
+#--app/database/seeds 		(ListaPaisesSeeder.php)
+
+#--app/models/ 				(ListaPaises.php)
+
+#--app/models/ 				(ListaEstados.php)
+
+#--app/						(routes.php)
 
 Espero y les funcione y estoy abierto a mejores practicas, por el momento lo dejare en modo simple espero pronto subir algo un poco más complejo.
 
