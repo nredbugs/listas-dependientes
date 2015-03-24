@@ -13,20 +13,15 @@
 
 Route::get('/', function()
 {
-	return View::make('index');
+	return View::make('listas');
 });
 
 //Ruta para consultar todos los paises
 Route::get('paises', function(){
-  if(Request::ajax()){
-      return ListaPaises::all()->toJson();
-  }
+    return ListaPaises::all()->toJson();
 });
 
 //Ruta en la cual retornamos los estados relaccionados con el id del pais
 Route::POST('estados', function(){
-  if(Request::ajax()){
-  	  $id_pais = e(Input::get('pais'));
-  	  return ListaEstados::where('id_pais','=', $id_pais)->get();
-  }
+  	return ListaEstados::where('id_pais','=', Input::get('pais'))->get();
 });
